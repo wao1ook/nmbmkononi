@@ -19,6 +19,7 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xfff1f1f1),
       appBar: AppBar(
         backgroundColor: Color(0xff0058a8),
         title: Text(
@@ -42,11 +43,7 @@ class _AppState extends State<App> {
         itemCount: 1,
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            child: Column(
-              children: <Widget>[
-                Home(),
-              ],
-            ),
+            child: Home(),
           );
         },
       ),

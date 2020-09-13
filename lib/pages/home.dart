@@ -6,7 +6,6 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xfff1f1f1),
       padding: EdgeInsets.symmetric(vertical: 25, horizontal: 25),
       child: Column(
         children: [
