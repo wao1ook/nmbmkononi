@@ -22,12 +22,11 @@ class _AppState extends State<App> {
       backgroundColor: Color(0xfff1f1f1),
       appBar: AppBar(
         backgroundColor: Color(0xff0058a8),
-        title: Text(
-          'NMB Mkononi',
-          style: TextStyle(
-            fontSize: 22.0,
-            letterSpacing: 1.5,
-          ),
+        title:Image(
+            image: AssetImage(
+              'assets/images/nmb_icon.png',
+            ),
+          height: 35,
         ),
         leading: IconButton(
           icon: Icon(FontAwesome.navicon),
@@ -35,7 +34,7 @@ class _AppState extends State<App> {
           color: Colors.white,
         ),
         actions: [
-          Icon(FontAwesome.user),
+          Image(image: AssetImage('assets/images/avatar.png'))
         ],
         centerTitle: true,
       ),
@@ -89,7 +88,7 @@ class _AppState extends State<App> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => launch("tel:+255766130227"),
-        child: Icon(FontAwesome.phone),
+        child: Icon(FontAwesome.plus),
         backgroundColor: Color(0xfffc8e4b),
       ),
     );
