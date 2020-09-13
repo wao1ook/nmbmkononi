@@ -315,7 +315,7 @@ class Home extends StatelessWidget {
                       color: const Color(0xffe1e1e1),
                     ),
                     child: Icon(
-                      FontAwesome.bank,
+                      FontAwesome.euro,
                       size: 28,
                       color: Color(0xff0058a8),
                     ),
