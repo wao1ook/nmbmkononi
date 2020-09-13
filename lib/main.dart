@@ -79,22 +79,20 @@ class _AfterSplashState extends State<AfterSplash> {
               new Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 35, vertical: 20),
                     child: Row(
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(right: 20.0),
                           child: Icon(
-                              FontAwesome.cog,
+                            FontAwesome.cog,
                             color: Colors.white,
                           ),
                         ),
                         Text(
                           'Huduma Zetu',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 18),
                         ),
                       ],
                     ),
@@ -104,7 +102,8 @@ class _AfterSplashState extends State<AfterSplash> {
               new Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 35, vertical: 20),
                     child: Row(
                       children: [
                         Padding(
@@ -116,10 +115,7 @@ class _AfterSplashState extends State<AfterSplash> {
                         ),
                         Text(
                           'Badilish Mandhari',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 18),
                         ),
                       ],
                     ),
@@ -129,7 +125,8 @@ class _AfterSplashState extends State<AfterSplash> {
               new Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 35, vertical: 10),
                     child: Row(
                       children: [
                         Padding(
@@ -141,10 +138,7 @@ class _AfterSplashState extends State<AfterSplash> {
                         ),
                         Text(
                           'Lugha',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 18),
                         ),
                       ],
                     ),
@@ -154,7 +148,8 @@ class _AfterSplashState extends State<AfterSplash> {
               new Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 35, vertical: 20),
                     child: Row(
                       children: [
                         Padding(
@@ -166,10 +161,7 @@ class _AfterSplashState extends State<AfterSplash> {
                         ),
                         Text(
                           'Washirikishe Wengine',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 18),
                         ),
                       ],
                     ),
@@ -179,7 +171,8 @@ class _AfterSplashState extends State<AfterSplash> {
               new Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 35, vertical: 20),
                     child: Row(
                       children: [
                         Padding(
@@ -191,10 +184,7 @@ class _AfterSplashState extends State<AfterSplash> {
                         ),
                         Text(
                           'Maswali Yanayoulizwa',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 18),
                         ),
                       ],
                     ),
@@ -204,7 +194,8 @@ class _AfterSplashState extends State<AfterSplash> {
               new Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 35, vertical: 20),
                     child: Row(
                       children: [
                         Padding(
@@ -216,10 +207,7 @@ class _AfterSplashState extends State<AfterSplash> {
                         ),
                         Text(
                           'Kuhusu NMB',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 18),
                         ),
                       ],
                     ),
@@ -229,7 +217,8 @@ class _AfterSplashState extends State<AfterSplash> {
               new Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 35, vertical: 20),
                     child: Row(
                       children: [
                         Padding(
@@ -241,10 +230,7 @@ class _AfterSplashState extends State<AfterSplash> {
                         ),
                         Text(
                           'Msaada',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 18),
                         ),
                       ],
                     ),
@@ -254,7 +240,8 @@ class _AfterSplashState extends State<AfterSplash> {
               new Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 150),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 35, vertical: 150),
                     child: Row(
                       children: [
                         Padding(
@@ -266,10 +253,7 @@ class _AfterSplashState extends State<AfterSplash> {
                         ),
                         Text(
                           'Ondoka',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 18),
                         ),
                       ],
                     ),
@@ -330,7 +314,7 @@ class _AfterSplashState extends State<AfterSplash> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => launch("tel:+255766130227"),
-        child: Icon(FontAwesome.plus),
+        child: Icon(FontAwesome.phone),
         backgroundColor: Color(0xfffc8e4b),
       ),
     );
