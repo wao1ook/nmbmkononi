@@ -14,7 +14,7 @@ class Home extends StatelessWidget {
             child: Container(
               padding: EdgeInsets.symmetric(vertical: 30, horizontal: 15),
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Color(0xff0058a8),
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Row(
@@ -98,7 +98,7 @@ class Home extends StatelessWidget {
               ),
               Icon(
                 FontAwesome.qrcode,
-                color: Colors.blue,
+                color: Color(0xff0058a8),
                 size: 20,
               ),
             ],
@@ -120,7 +120,7 @@ class Home extends StatelessWidget {
                     ),
                     child: Icon(
                       FontAwesome.money,
-                      color: Colors.blue,
+                      color: Color(0xff0058a8),
                     ),
                   ),
                   Padding(
@@ -149,7 +149,7 @@ class Home extends StatelessWidget {
                     ),
                     child: Icon(
                       FontAwesome.credit_card,
-                      color: Colors.blue,
+                      color: Color(0xff0058a8),
                     ),
                   ),
                   Padding(
@@ -178,7 +178,7 @@ class Home extends StatelessWidget {
                     ),
                     child: Icon(
                       FontAwesome.fax,
-                      color: Colors.blue,
+                      color: Color(0xff0058a8),
                     ),
                   ),
                   Padding(
@@ -215,7 +215,7 @@ class Home extends StatelessWidget {
                     ),
                     child: Icon(
                       FontAwesome.money,
-                      color: Colors.blue,
+                      color: Color(0xff0058a8),
                     ),
                   ),
                   Padding(
@@ -244,7 +244,7 @@ class Home extends StatelessWidget {
                     ),
                     child: Icon(
                       FontAwesome.mobile_phone,
-                      color: Colors.blue,
+                      color: Color(0xff0058a8),
                     ),
                   ),
                   Padding(
@@ -273,7 +273,7 @@ class Home extends StatelessWidget {
                     ),
                     child: Icon(
                       FontAwesome.line_chart,
-                      color: Colors.blue,
+                      color: Color(0xff0058a8),
                     ),
                   ),
                   Padding(
@@ -310,7 +310,7 @@ class Home extends StatelessWidget {
                     ),
                     child: Icon(
                       FontAwesome.bank,
-                      color: Colors.blue,
+                      color: Color(0xff0058a8),
                     ),
                   ),
                   Padding(
