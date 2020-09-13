@@ -10,7 +10,78 @@ class Home extends StatelessWidget {
       padding: EdgeInsets.all(30),
       child: Column(
         children: [
-          Row(),
+          Container(
+            child: Container(
+              padding: EdgeInsets.symmetric(vertical: 30, horizontal: 15),
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(bottom: 8),
+                        child: Text(
+                          'Salio Liliopo',
+                          style: TextStyle(
+                            fontFamily: 'Myriad Pro',
+                            fontSize: 16,
+                            color: const Color(0xffffffff),
+                            letterSpacing: 0.0007874999791383743,
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                      ),
+                      Text(
+                        'TZS 250,450',
+                        style: TextStyle(
+                          fontFamily: 'Myriad Pro',
+                          fontSize: 32,
+                          color: const Color(0xffffffff),
+                          letterSpacing: 0.0016031251698732376,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text(
+                        'Salio Halisi',
+                        style: TextStyle(
+                          fontFamily: 'Myriad Pro',
+                          fontSize: 16,
+                          color: Colors.white54,
+                          letterSpacing: 0.0005062499865889549,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                      Text(
+                        'TZS 23,733',
+                        style: TextStyle(
+                          fontFamily: 'Myriad Pro',
+                          fontSize: 20,
+                          color: Colors.white54,
+                          letterSpacing: 0.0006749999821186066,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -111,7 +182,7 @@ class Home extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top:8.0),
+                    padding: EdgeInsets.only(top: 8.0),
                     child: Text(
                       'Lipa Bili',
                       style: TextStyle(
@@ -127,7 +198,9 @@ class Home extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 40,),
+          SizedBox(
+            height: 40,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -204,7 +277,7 @@ class Home extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top:8.0),
+                    padding: EdgeInsets.only(top: 8.0),
                     child: Text(
                       'Uwekezaji',
                       style: TextStyle(
@@ -220,7 +293,9 @@ class Home extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 40,),
+          SizedBox(
+            height: 40,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
