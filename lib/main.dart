@@ -50,6 +50,46 @@ class _AppState extends State<App> {
           );
         },
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+              color: Color(0xff0058a8),
+            ),
+            title: Text(
+              'Nyumbani',
+              style: TextStyle(
+                color: Color(0xff0058a8),
+              ),
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              FontAwesome.star,
+              color: Color(0xff0058a8),
+            ),
+            title: Text(
+              'Nipendayo',
+              style: TextStyle(
+                color: Color(0xff0058a8),
+              ),
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              FontAwesome.wechat,
+              color: Color(0xff0058a8),
+            ),
+            title: Text(
+              'Chati Nasi',
+              style: TextStyle(
+                color: Color(0xff0058a8),
+              ),
+            ),
+          ),
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => launch("tel:+255766130227"),
         child: Icon(FontAwesome.phone),
