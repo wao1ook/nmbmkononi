@@ -6,13 +6,13 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
-      padding: EdgeInsets.all(30),
+      color: Color(0xfff1f1f1),
+      padding: EdgeInsets.symmetric(vertical: 25, horizontal: 25),
       child: Column(
         children: [
           Container(
             child: Container(
-              padding: EdgeInsets.symmetric(vertical: 30, horizontal: 15),
+              padding: EdgeInsets.symmetric(vertical: 30, horizontal: 25),
               decoration: BoxDecoration(
                 color: Color(0xff0058a8),
                 borderRadius: BorderRadius.circular(5),
@@ -38,7 +38,7 @@ class Home extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        'TZS 250,450',
+                        'TZS 950,450',
                         style: TextStyle(
                           fontFamily: 'Myriad Pro',
                           fontSize: 32,
@@ -64,7 +64,7 @@ class Home extends StatelessWidget {
                         textAlign: TextAlign.left,
                       ),
                       Text(
-                        'TZS 23,733',
+                        'TZS 940,450',
                         style: TextStyle(
                           fontFamily: 'Myriad Pro',
                           fontSize: 20,
@@ -80,7 +80,7 @@ class Home extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 30,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -90,7 +90,8 @@ class Home extends StatelessWidget {
                 'Huduma za haraka',
                 style: TextStyle(
                   fontFamily: 'Myriad Pro',
-                  fontSize: 20,
+                  fontSize: 22,
+                  fontWeight: FontWeight.w500,
                   color: const Color(0xff1f1f1f),
                   height: 1.2666666666666666,
                 ),
@@ -99,7 +100,7 @@ class Home extends StatelessWidget {
               Icon(
                 FontAwesome.qrcode,
                 color: Color(0xff0058a8),
-                size: 20,
+                size: 34,
               ),
             ],
           ),
@@ -112,14 +113,15 @@ class Home extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
+                    height: 70,
+                    width: 70,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
                       color: const Color(0xffe1e1e1),
                     ),
                     child: Icon(
                       FontAwesome.money,
+                      size: 32,
                       color: Color(0xff0058a8),
                     ),
                   ),
@@ -129,7 +131,7 @@ class Home extends StatelessWidget {
                       'Tuma Fedha',
                       style: TextStyle(
                         fontFamily: 'Myriad Pro',
-                        fontSize: 13,
+                        fontSize: 15,
                         color: const Color(0xff555555),
                         fontWeight: FontWeight.w600,
                       ),
@@ -141,14 +143,15 @@ class Home extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
+                    height: 70,
+                    width: 70,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
                       color: const Color(0xffe1e1e1),
                     ),
                     child: Icon(
                       FontAwesome.credit_card,
+                      size: 28,
                       color: Color(0xff0058a8),
                     ),
                   ),
@@ -158,7 +161,7 @@ class Home extends StatelessWidget {
                       'Toa Fedha',
                       style: TextStyle(
                         fontFamily: 'Myriad Pro',
-                        fontSize: 13,
+                        fontSize: 15,
                         color: const Color(0xff555555),
                         fontWeight: FontWeight.w600,
                       ),
@@ -170,14 +173,15 @@ class Home extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
+                    height: 70,
+                    width: 70,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
                       color: const Color(0xffe1e1e1),
                     ),
                     child: Icon(
                       FontAwesome.fax,
+                      size: 28,
                       color: Color(0xff0058a8),
                     ),
                   ),
@@ -187,7 +191,7 @@ class Home extends StatelessWidget {
                       'Lipa Bili',
                       style: TextStyle(
                         fontFamily: 'Myriad Pro',
-                        fontSize: 13,
+                        fontSize: 15,
                         color: const Color(0xff555555),
                         fontWeight: FontWeight.w600,
                       ),
@@ -207,14 +211,15 @@ class Home extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
+                    height: 70,
+                    width: 70,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
                       color: const Color(0xffe1e1e1),
                     ),
                     child: Icon(
                       FontAwesome.money,
+                      size: 32,
                       color: Color(0xff0058a8),
                     ),
                   ),
@@ -224,7 +229,7 @@ class Home extends StatelessWidget {
                       'Mkopo',
                       style: TextStyle(
                         fontFamily: 'Myriad Pro',
-                        fontSize: 13,
+                        fontSize: 15,
                         color: const Color(0xff555555),
                         fontWeight: FontWeight.w600,
                       ),
@@ -236,24 +241,25 @@ class Home extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
+                    height: 70,
+                    width: 70,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
                       color: const Color(0xffe1e1e1),
                     ),
                     child: Icon(
                       FontAwesome.mobile_phone,
+                      size: 38,
                       color: Color(0xff0058a8),
                     ),
                   ),
                   Padding(
                     padding: EdgeInsets.only(top: 8.0),
                     child: Text(
-                      'Nunua Muda wa Maongezi',
+                      'Muda wa Maongezi',
                       style: TextStyle(
                         fontFamily: 'Myriad Pro',
-                        fontSize: 13,
+                        fontSize: 15,
                         color: const Color(0xff555555),
                         fontWeight: FontWeight.w600,
                       ),
@@ -265,14 +271,15 @@ class Home extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
+                    height: 70,
+                    width: 70,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
                       color: const Color(0xffe1e1e1),
                     ),
                     child: Icon(
                       FontAwesome.line_chart,
+                      size: 28,
                       color: Color(0xff0058a8),
                     ),
                   ),
@@ -282,7 +289,7 @@ class Home extends StatelessWidget {
                       'Uwekezaji',
                       style: TextStyle(
                         fontFamily: 'Myriad Pro',
-                        fontSize: 13,
+                        fontSize: 15,
                         color: const Color(0xff555555),
                         fontWeight: FontWeight.w600,
                       ),
@@ -302,14 +309,15 @@ class Home extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
+                    height: 70,
+                    width: 70,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
                       color: const Color(0xffe1e1e1),
                     ),
                     child: Icon(
                       FontAwesome.bank,
+                      size: 28,
                       color: Color(0xff0058a8),
                     ),
                   ),
@@ -319,7 +327,7 @@ class Home extends StatelessWidget {
                       'Fedha za Kigeni',
                       style: TextStyle(
                         fontFamily: 'Myriad Pro',
-                        fontSize: 13,
+                        fontSize: 15,
                         color: const Color(0xff555555),
                         fontWeight: FontWeight.w600,
                       ),

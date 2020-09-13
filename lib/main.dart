@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:nmbmkononi/pages/home.dart';
 
 void main() {
@@ -48,6 +49,11 @@ class _AppState extends State<App> {
             ),
           );
         },
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => launch("tel:+255766130227"),
+        child: Icon(FontAwesome.phone),
+        backgroundColor: Color(0xfffc8e4b),
       ),
     );
   }
