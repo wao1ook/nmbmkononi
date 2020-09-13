@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:splashscreen/splashscreen.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:nmbmkononi/pages/home.dart';
 
@@ -17,6 +18,21 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
+  @override
+  Widget build(BuildContext context) {
+    return new SplashScreen(
+      seconds: 5,
+      navigateAfterSeconds: new AfterSplash(),
+      image: new Image.asset( 'assets/images/mkononi logo.png'),
+      backgroundColor: Color(0xff0058a8),
+      styleTextUnderTheLoader: new TextStyle(),
+      photoSize: 70.0,
+      loaderColor: Colors.white38,
+    );
+  }
+}
+
+class AfterSplash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
