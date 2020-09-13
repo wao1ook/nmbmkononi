@@ -26,7 +26,7 @@ class _AppState extends State<App> {
       image: new Image.asset('assets/images/mkononi logo.png'),
       backgroundColor: Color(0xff0058a8),
       styleTextUnderTheLoader: new TextStyle(),
-      photoSize: 70.0,
+      photoSize: 100.0,
       loaderColor: Colors.white38,
     );
   }
@@ -61,27 +61,225 @@ class _AfterSplashState extends State<AfterSplash> {
         centerTitle: true,
       ),
       key: scaffoldKey,
-      drawer: new Drawer(
+      drawer: Container(
+        child: Drawer(
+            child: Container(
+          color: Color(0xff0058a8),
           child: new ListView(
-        children: <Widget>[
-          new DrawerHeader(
-            child: new Text('Header'),
+            children: <Widget>[
+              new DrawerHeader(
+                  child: Padding(
+                padding: const EdgeInsets.all(30.0),
+                child: Image(
+                  image: AssetImage(
+                    'assets/images/mkononi logo.png',
+                  ),
+                ),
+              )),
+              new Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 20.0),
+                          child: Icon(
+                              FontAwesome.cog,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          'Huduma Zetu',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              new Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 20.0),
+                          child: Icon(
+                            FontAwesome.moon_o,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          'Badilish Mandhari',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              new Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 20.0),
+                          child: Icon(
+                            FontAwesome.language,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          'Lugha',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              new Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 20.0),
+                          child: Icon(
+                            FontAwesome.share,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          'Washirikishe Wengine',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              new Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 20.0),
+                          child: Icon(
+                            FontAwesome.wechat,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          'Maswali Yanayoulizwa',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              new Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 20.0),
+                          child: Icon(
+                            FontAwesome.question_circle_o,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          'Kuhusu NMB',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              new Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 20.0),
+                          child: Icon(
+                            FontAwesome.support,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          'Msaada',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              new Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 150),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 20.0),
+                          child: Icon(
+                            FontAwesome.power_off,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          'Ondoka',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ],
           ),
-          new ListTile(
-            title: new Text('First Menu Item'),
-            onTap: () {},
-          ),
-          new ListTile(
-            title: new Text('Second Menu Item'),
-            onTap: () {},
-          ),
-          new Divider(),
-          new ListTile(
-            title: new Text('About'),
-            onTap: () {},
-          ),
-        ],
-      )),
+        )),
+      ),
       body: ListView.builder(
         itemCount: 1,
         itemBuilder: (BuildContext context, int index) {
