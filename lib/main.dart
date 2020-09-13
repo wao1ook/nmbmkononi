@@ -23,7 +23,7 @@ class _AppState extends State<App> {
     return new SplashScreen(
       seconds: 5,
       navigateAfterSeconds: new AfterSplash(),
-      image: new Image.asset( 'assets/images/mkononi logo.png'),
+      image: new Image.asset('assets/images/mkononi logo.png'),
       backgroundColor: Color(0xff0058a8),
       styleTextUnderTheLoader: new TextStyle(),
       photoSize: 70.0,
@@ -32,7 +32,14 @@ class _AppState extends State<App> {
   }
 }
 
-class AfterSplash extends StatelessWidget {
+class AfterSplash extends StatefulWidget {
+  @override
+  _AfterSplashState createState() => _AfterSplashState();
+}
+
+class _AfterSplashState extends State<AfterSplash> {
+  var scaffoldKey = GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,12 +54,34 @@ class AfterSplash extends StatelessWidget {
         ),
         leading: IconButton(
           icon: Icon(FontAwesome.navicon),
-          onPressed: () => Navigator.pop(context),
+          onPressed: () => scaffoldKey.currentState.openDrawer(),
           color: Colors.white,
         ),
         actions: [Image(image: AssetImage('assets/images/avatar.png'))],
         centerTitle: true,
       ),
+      key: scaffoldKey,
+      drawer: new Drawer(
+          child: new ListView(
+        children: <Widget>[
+          new DrawerHeader(
+            child: new Text('Header'),
+          ),
+          new ListTile(
+            title: new Text('First Menu Item'),
+            onTap: () {},
+          ),
+          new ListTile(
+            title: new Text('Second Menu Item'),
+            onTap: () {},
+          ),
+          new Divider(),
+          new ListTile(
+            title: new Text('About'),
+            onTap: () {},
+          ),
+        ],
+      )),
       body: ListView.builder(
         itemCount: 1,
         itemBuilder: (BuildContext context, int index) {
