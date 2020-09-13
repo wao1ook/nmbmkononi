@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:nmbmkononi/pages/profile.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:nmbmkononi/pages/home.dart';
@@ -57,7 +58,19 @@ class _AfterSplashState extends State<AfterSplash> {
           onPressed: () => scaffoldKey.currentState.openDrawer(),
           color: Colors.white,
         ),
-        actions: [Image(image: AssetImage('assets/images/avatar.png'))],
+        actions: [
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (_) => ProfilePage()));
+            },
+            child: Image(
+                image: AssetImage(
+                    'assets/images/avatar.png'
+                )
+            ),
+          )
+        ],
         centerTitle: true,
       ),
       key: scaffoldKey,
