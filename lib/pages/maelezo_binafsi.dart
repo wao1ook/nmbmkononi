@@ -46,6 +46,14 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
                             'assets/images/avatar.png',
                           ),
                         ),
+                        Text(
+                          'Hariri Wasifu',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
                         Padding(
                           padding: const EdgeInsets.only(top: 1.0),
                           child: Text(
@@ -69,9 +77,8 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
                         child: Text(
                           'Maelezo',
                           style: TextStyle(
-                            color: Theme.of(context).accentColor,
+                            color: Colors.black,
                             fontWeight: FontWeight.bold,
-                            letterSpacing: 1,
                             fontSize: 17,
                           ),
                         ),
@@ -88,7 +95,7 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
                       ),
                       TextField(
                         decoration: InputDecoration(
-                            hintText: 'eg. John Doe',
+                            hintText: 'mfano: John Doe',
                             hintStyle: TextStyle(
                               color: Color(0xff959599),
                               fontSize: 17,
@@ -131,7 +138,7 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
                               borderSide: BorderSide(
                                   color: Theme.of(context).primaryColor),
                             )),
-                        items: ['Male', 'Female'].map((String value) {
+                        items: ['Mwanaume', 'Mwanamke'].map((String value) {
                           return DropdownMenuItem(
                               value: value, child: Text(value));
                         }).toList(),
@@ -142,12 +149,67 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
                         child: Text(
                           'Maelezo ya Mawasiliano',
                           style: TextStyle(
-                            color: Theme.of(context).accentColor,
+                            color: Colors.black,
                             fontWeight: FontWeight.bold,
-                            letterSpacing: 1,
                             fontSize: 17,
                           ),
                         ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(bottom: 10, top: 0),
+                        child: Text(
+                          'Nambari ya simu',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                              color: Color(0xff76767a)),
+                        ),
+                      ),
+                      TextField(
+                        decoration: InputDecoration(
+                            hintText: '+255 712 345 678',
+                            hintStyle: TextStyle(
+                              color: Color(0xff959599),
+                              fontSize: 17,
+                            ),
+                            filled: true,
+                            fillColor: Colors.white,
+                            enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide(color: Colors.grey)),
+                            focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10),
+                              borderSide: BorderSide(
+                                  color: Theme.of(context).primaryColor),
+                            )),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(bottom: 10, top: 20),
+                        child: Text(
+                          'Barua Pepe',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                              color: Color(0xff76767a)),
+                        ),
+                      ),
+                      TextField(
+                        decoration: InputDecoration(
+                            hintText: 'mfano: jdoe@domain.tdl',
+                            hintStyle: TextStyle(
+                              color: Color(0xff959599),
+                              fontSize: 17,
+                            ),
+                            filled: true,
+                            fillColor: Colors.white,
+                            enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide(color: Colors.grey)),
+                            focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10),
+                              borderSide: BorderSide(
+                                  color: Theme.of(context).primaryColor),
+                            )),
                       ),
                     ],
                   ),

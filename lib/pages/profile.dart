@@ -52,7 +52,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             ),
                           ),
                           Text(
-                            'Jackson Makinda',
+                            'John Doe',
                             style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
@@ -106,13 +106,12 @@ class _ProfilePageState extends State<ProfilePage> {
                                 'Maelezo Binafsi',
                                 style: TextStyle(
                                     fontSize: 19,
-                                    color: Colors.grey,
-                                    fontWeight: FontWeight.w500),
+                                    color: Colors.grey),
                               ),
                               Icon(
                                 Icons.keyboard_arrow_right_rounded,
                                 color: Colors.grey,
-                                size: 40,
+                                size: 35,
                               )
                             ],
                           ),
@@ -125,59 +124,45 @@ class _ProfilePageState extends State<ProfilePage> {
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.grey, width: 1),
                             borderRadius: BorderRadius.circular(10)),
-                        child: GestureDetector(
-                          onTap: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (_) => MaelezoBinafsiPage()));
-                          },
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                'Maelezo ya Akaunti',
-                                style: TextStyle(
-                                    fontSize: 19,
-                                    color: Colors.grey,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                              Icon(
-                                Icons.keyboard_arrow_right_rounded,
-                                color: Colors.grey,
-                                size: 40,
-                              )
-                            ],
-                          ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Maelezo ya Akaunti',
+                              style: TextStyle(
+                                  fontSize: 19,
+                                  color: Colors.grey),
+                            ),
+                            Icon(
+                              Icons.keyboard_arrow_right_rounded,
+                              color: Colors.grey,
+                              size: 35,
+                            )
+                          ],
                         ),
                       ),
                       Container(
                         padding:
-                        EdgeInsets.symmetric(vertical: 10, horizontal: 17),
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 17),
                         margin: EdgeInsets.only(bottom: 20),
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.grey, width: 1),
                             borderRadius: BorderRadius.circular(10)),
-                        child: GestureDetector(
-                          onTap: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (_) => MaelezoBinafsiPage()));
-                          },
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                'Taarifa Fupi',
-                                style: TextStyle(
-                                    fontSize: 19,
-                                    color: Colors.grey,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                              Icon(
-                                Icons.keyboard_arrow_right_rounded,
-                                color: Colors.grey,
-                                size: 40,
-                              )
-                            ],
-                          ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Taarifa Fupi',
+                              style: TextStyle(
+                                  fontSize: 19,
+                                  color: Colors.grey),
+                            ),
+                            Icon(
+                              Icons.keyboard_arrow_right_rounded,
+                              color: Colors.grey,
+                              size: 35,
+                            )
+                          ],
                         ),
                       ),
                       Padding(
@@ -192,32 +177,25 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                       Container(
                         padding:
-                        EdgeInsets.symmetric(vertical: 10, horizontal: 17),
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 17),
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.grey, width: 1),
                             borderRadius: BorderRadius.circular(10)),
-                        child: GestureDetector(
-                          onTap: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (_) => MaelezoBinafsiPage()));
-                          },
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                'Taarifa ya Kielektroniki',
-                                style: TextStyle(
-                                    fontSize: 19,
-                                    color: Colors.grey,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                              Icon(
-                                Icons.keyboard_arrow_right_rounded,
-                                color: Colors.grey,
-                                size: 40,
-                              )
-                            ],
-                          ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Taarifa ya Kielektroniki',
+                              style: TextStyle(
+                                  fontSize: 19,
+                                  color: Colors.grey),
+                            ),
+                            Icon(
+                              Icons.keyboard_arrow_right_rounded,
+                              color: Colors.grey,
+                              size: 35,
+                            )
+                          ],
                         ),
                       ),
                     ],
