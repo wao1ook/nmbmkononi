@@ -86,11 +86,13 @@ class _ProfilePageState extends State<ProfilePage> {
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
-                              fontSize: 16),
+                              fontSize: 17),
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.all(15),
+                        padding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 17),
+                        margin: EdgeInsets.only(bottom: 20),
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.grey, width: 1),
                             borderRadius: BorderRadius.circular(10)),
@@ -104,8 +106,112 @@ class _ProfilePageState extends State<ProfilePage> {
                             children: [
                               Text(
                                 'Maelezo Binafsi',
-                                style:
-                                    TextStyle(fontSize: 19, color: Colors.grey),
+                                style: TextStyle(
+                                    fontSize: 19,
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                              Icon(
+                                Icons.keyboard_arrow_right_rounded,
+                                color: Colors.grey,
+                                size: 40,
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 17),
+                        margin: EdgeInsets.only(bottom: 20),
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey, width: 1),
+                            borderRadius: BorderRadius.circular(10)),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (_) => MaelezoBinafsiPage()));
+                          },
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Maelezo ya Akaunti',
+                                style: TextStyle(
+                                    fontSize: 19,
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                              Icon(
+                                Icons.keyboard_arrow_right_rounded,
+                                color: Colors.grey,
+                                size: 40,
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding:
+                        EdgeInsets.symmetric(vertical: 10, horizontal: 17),
+                        margin: EdgeInsets.only(bottom: 20),
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey, width: 1),
+                            borderRadius: BorderRadius.circular(10)),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (_) => MaelezoBinafsiPage()));
+                          },
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Taarifa Fupi',
+                                style: TextStyle(
+                                    fontSize: 19,
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                              Icon(
+                                Icons.keyboard_arrow_right_rounded,
+                                color: Colors.grey,
+                                size: 40,
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 20),
+                        child: Text(
+                          'Nyingine',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                              fontSize: 17),
+                        ),
+                      ),
+                      Container(
+                        padding:
+                        EdgeInsets.symmetric(vertical: 10, horizontal: 17),
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey, width: 1),
+                            borderRadius: BorderRadius.circular(10)),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (_) => MaelezoBinafsiPage()));
+                          },
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Taarifa ya Kielektroniki',
+                                style: TextStyle(
+                                    fontSize: 19,
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.w500),
                               ),
                               Icon(
                                 Icons.keyboard_arrow_right_rounded,

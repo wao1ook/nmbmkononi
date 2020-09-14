@@ -18,7 +18,7 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
         elevation: 0.0,
         backgroundColor: Color(0xff0058a8),
         title: Text(
-          'My Profile',
+          'Maelezo Binafsi',
           style: TextStyle(
             fontSize: 20.0,
             color: Color(0xffffffff),
@@ -32,41 +32,30 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
         itemCount: 1,
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            color: Color(0xff0058a8),
             child: Column(
               children: <Widget>[
                 Container(
-                    height: 200,
+                  padding: EdgeInsets.only(bottom: 30),
+                  width: double.infinity,
                     color: Color(0xff0058a8),
-                    child: Expanded(
-                      flex: 5,
-                      child: Column(
-                        children: [
-                          Image(
-                            image: AssetImage(
-                              'assets/images/avatar.png',
-                            ),
+                    child: Column(
+                      children: [
+                        Image(
+                          image: AssetImage(
+                            'assets/images/avatar.png',
                           ),
-                          Text(
-                            'Jackson Makinda',
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 1.0),
+                          child: Text(
+                            'Badili Picha',
                             style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
+                                color: Colors.white70,
+                                fontSize: 16
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 8.0),
-                            child: Text(
-                              'Mmiliki',
-                              style: TextStyle(
-                                  color: Colors.white70,
-                                  fontSize: 16
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
+                        )
+                      ],
                     )
                 ),
               ],
