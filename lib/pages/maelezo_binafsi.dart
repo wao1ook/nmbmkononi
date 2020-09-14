@@ -26,6 +26,23 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
             letterSpacing: 1.5,
           ),
         ),
+        actions: [
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(right: 12),
+                child: Text(
+                  'save',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white70,
+                  ),
+                ),
+              )
+            ],
+          )
+        ],
         centerTitle: false,
       ),
       backgroundColor: Color(0xfff1f1f1),
