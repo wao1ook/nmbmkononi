@@ -46,6 +46,7 @@ class _AfterSplashState extends State<AfterSplash> {
     return Scaffold(
       backgroundColor: Color(0xfff1f1f1),
       appBar: AppBar(
+        elevation: 0.0,
         backgroundColor: Color(0xff0058a8),
         title: Image(
           image: AssetImage(
