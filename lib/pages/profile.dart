@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:flutter_icons/flutter_icons.dart';
 import 'package:nmbmkononi/pages/maelezo_binafsi.dart';
 
 void main() {
@@ -76,7 +75,6 @@ class _ProfilePageState extends State<ProfilePage> {
                   width: double.infinity,
                   padding: EdgeInsets.symmetric(vertical: 30, horizontal: 30),
                   child: Column(
-                    // mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(

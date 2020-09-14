@@ -9,6 +9,11 @@ import 'package:nmbmkononi/pages/home.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
+    theme: ThemeData(
+      primaryColor: Color(0xff0058a8),
+      accentColor: Color(0xfffc8e4b),
+      fontFamily: 'Myriad Pro'
+    ),
     home: App(),
   ));
 }
@@ -328,7 +333,10 @@ class _AfterSplashState extends State<AfterSplash> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => launch("tel:+255766130227"),
-        child: Icon(FontAwesome.phone),
+        child: Icon(
+            FontAwesome.phone,
+          color: Colors.white,
+        ),
         backgroundColor: Color(0xfffc8e4b),
       ),
     );
