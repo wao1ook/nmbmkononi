@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:nmbmkononi/pages/maelezo_binafsi.dart';
+import 'package:nmbmkononi/pages/taarifa_fupi.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -148,21 +149,27 @@ class _ProfilePageState extends State<ProfilePage> {
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.grey, width: 1),
                             borderRadius: BorderRadius.circular(10)),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              'Taarifa Fupi',
-                              style: TextStyle(
-                                  fontSize: 19,
-                                  color: Colors.grey),
-                            ),
-                            Icon(
-                              Icons.keyboard_arrow_right_rounded,
-                              color: Colors.grey,
-                              size: 35,
-                            )
-                          ],
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (_) => TaarifaFupiPage()));
+                          },
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Taarifa Fupi',
+                                style: TextStyle(
+                                    fontSize: 19,
+                                    color: Colors.grey),
+                              ),
+                              Icon(
+                                Icons.keyboard_arrow_right_rounded,
+                                color: Colors.grey,
+                                size: 35,
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       Padding(
