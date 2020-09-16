@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -145,7 +146,27 @@ class _TaarifaZaKielektronikiPageState
                       padding:
                           EdgeInsets.symmetric(vertical: 15, horizontal: 20),
                       splashColor: Theme.of(context).primaryColor,
-                      onPressed: () {},
+                      onPressed: () {
+                        // successPop(context);
+                        showDialog(
+                            context: context,
+                            builder: (ctxt) => new AlertDialog(
+                                  title: Icon(
+                                    FontAwesome.check_circle,
+                                    color: Theme.of(context).accentColor,
+                                    size: 40,
+                                  ),
+                                  content: Text(
+                                    'Taarifa ya kielektroniki imefanikiwa kutumwa,'
+                                    ' Ndani ya dakika moja utapokea barua pepe hiyo.',
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      color: Colors.black87,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ));
+                      },
                       child: Text(
                         "WASILISHA",
                         style: TextStyle(fontSize: 16.0, letterSpacing: 2),
