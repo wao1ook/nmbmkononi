@@ -1,6 +1,4 @@
-List <String> images = [
-  "assets/images/Card4.png",
-  "assets/images/Card3.png",
-  "assets/images/Card2.png",
-  "assets/images/Card1.png",
+final List<String> cardList = [
+  'assets/images/Card1.png',
+  'assets/images/Card2.png',
 ];
