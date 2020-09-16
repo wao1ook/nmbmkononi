@@ -95,8 +95,8 @@ class _ProfilePageState extends State<ProfilePage> {
                               builder: (_) => MaelezoBinafsiPage()));
                         },
                         child: Container(
-                          padding:
-                              EdgeInsets.symmetric(vertical: 10, horizontal: 17),
+                          padding: EdgeInsets.symmetric(
+                              vertical: 10, horizontal: 17),
                           margin: EdgeInsets.only(bottom: 20),
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.grey, width: 1),
@@ -107,12 +107,12 @@ class _ProfilePageState extends State<ProfilePage> {
                               Text(
                                 'Maelezo Binafsi',
                                 style:
-                                    TextStyle(fontSize: 19, color: Colors.grey),
+                                    TextStyle(fontSize: 17, color: Colors.grey),
                               ),
                               Icon(
                                 Icons.keyboard_arrow_right_rounded,
                                 color: Colors.grey,
-                                size: 35,
+                                size: 30,
                               )
                             ],
                           ),
@@ -131,12 +131,12 @@ class _ProfilePageState extends State<ProfilePage> {
                             Text(
                               'Maelezo ya Akaunti',
                               style:
-                                  TextStyle(fontSize: 19, color: Colors.grey),
+                                  TextStyle(fontSize: 17, color: Colors.grey),
                             ),
                             Icon(
                               Icons.keyboard_arrow_right_rounded,
                               color: Colors.grey,
-                              size: 35,
+                              size: 30,
                             )
                           ],
                         ),
@@ -159,12 +159,12 @@ class _ProfilePageState extends State<ProfilePage> {
                               Text(
                                 'Taarifa Fupi',
                                 style:
-                                    TextStyle(fontSize: 19, color: Colors.grey),
+                                    TextStyle(fontSize: 17, color: Colors.grey),
                               ),
                               Icon(
                                 Icons.keyboard_arrow_right_rounded,
                                 color: Colors.grey,
-                                size: 35,
+                                size: 30,
                               )
                             ],
                           ),
@@ -197,12 +197,12 @@ class _ProfilePageState extends State<ProfilePage> {
                               Text(
                                 'Taarifa ya Kielektroniki',
                                 style:
-                                    TextStyle(fontSize: 19, color: Colors.grey),
+                                    TextStyle(fontSize: 17, color: Colors.grey),
                               ),
                               Icon(
                                 Icons.keyboard_arrow_right_rounded,
                                 color: Colors.grey,
-                                size: 35,
+                                size: 30,
                               )
                             ],
                           ),

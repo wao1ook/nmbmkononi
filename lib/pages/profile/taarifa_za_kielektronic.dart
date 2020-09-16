@@ -59,7 +59,7 @@ class _TaarifaZaKielektronikiPageState
                             hintText: 'mfano: 16/01/2020',
                             hintStyle: TextStyle(
                               color: Color(0xff959599),
-                              fontSize: 17,
+                              fontSize: 16,
                             ),
                             filled: true,
                             fillColor: Colors.white,
@@ -75,7 +75,7 @@ class _TaarifaZaKielektronikiPageState
                       Padding(
                         padding: EdgeInsets.only(bottom: 10, top: 20),
                         child: Text(
-                          'Jinsia',
+                          'Muda',
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
@@ -87,7 +87,7 @@ class _TaarifaZaKielektronikiPageState
                             hintText: 'Miezi 3',
                             hintStyle: TextStyle(
                               color: Color(0xff959599),
-                              fontSize: 17,
+                              fontSize: 16,
                             ),
                             filled: true,
                             fillColor: Colors.white,
@@ -121,7 +121,7 @@ class _TaarifaZaKielektronikiPageState
                             hintText: 'mfano: johndoe@gmail.com',
                             hintStyle: TextStyle(
                               color: Color(0xff959599),
-                              fontSize: 17,
+                              fontSize: 16,
                             ),
                             filled: true,
                             fillColor: Colors.white,

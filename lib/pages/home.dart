@@ -89,7 +89,7 @@ class Home extends StatelessWidget {
                 'Huduma za haraka',
                 style: TextStyle(
                   fontFamily: 'Myriad Pro',
-                  fontSize: 22,
+                  fontSize: 20,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xff1f1f1f),
                   height: 1.2666666666666666,
@@ -99,7 +99,7 @@ class Home extends StatelessWidget {
               Icon(
                 FontAwesome.qrcode,
                 color: Theme.of(context).primaryColor,
-                size: 34,
+                size: 30,
               ),
             ],
           ),

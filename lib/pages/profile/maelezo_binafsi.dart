@@ -72,7 +72,7 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(top: 1.0),
+                          padding: const EdgeInsets.only(top: 8.0),
                           child: Text(
                             'Badili Picha',
                             style:
@@ -96,7 +96,7 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
                           style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
-                            fontSize: 17,
+                            fontSize: 16,
                           ),
                         ),
                       ),
@@ -115,7 +115,7 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
                             hintText: 'mfano: John Doe',
                             hintStyle: TextStyle(
                               color: Color(0xff959599),
-                              fontSize: 17,
+                              fontSize: 16,
                             ),
                             filled: true,
                             fillColor: Colors.white,
@@ -143,7 +143,7 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
                             hintText: 'Chagua Jinsia',
                             hintStyle: TextStyle(
                               color: Color(0xff959599),
-                              fontSize: 17,
+                              fontSize: 16,
                             ),
                             filled: true,
                             fillColor: Colors.white,
@@ -168,7 +168,7 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
                           style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
-                            fontSize: 17,
+                            fontSize: 16,
                           ),
                         ),
                       ),
@@ -187,7 +187,7 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
                             hintText: '+255 712 345 678',
                             hintStyle: TextStyle(
                               color: Color(0xff959599),
-                              fontSize: 17,
+                              fontSize: 16,
                             ),
                             filled: true,
                             fillColor: Colors.white,
@@ -215,7 +215,7 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
                             hintText: 'mfano: jdoe@domain.tdl',
                             hintStyle: TextStyle(
                               color: Color(0xff959599),
-                              fontSize: 17,
+                              fontSize: 16,
                             ),
                             filled: true,
                             fillColor: Colors.white,
