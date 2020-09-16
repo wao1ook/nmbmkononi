@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:nmbmkononi/pages/maelezo_binafsi.dart';
-import 'package:nmbmkononi/pages/taarifa_fupi.dart';
+import 'package:nmbmkononi/pages/profile/maelezo_binafsi.dart';
+import 'package:nmbmkononi/pages/profile/taarifa_fupi.dart';
+import 'package:nmbmkononi/pages/profile/taarifa_za_kielektronic.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -88,26 +89,25 @@ class _ProfilePageState extends State<ProfilePage> {
                               fontSize: 17),
                         ),
                       ),
-                      Container(
-                        padding:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 17),
-                        margin: EdgeInsets.only(bottom: 20),
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey, width: 1),
-                            borderRadius: BorderRadius.circular(10)),
-                        child: GestureDetector(
-                          onTap: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (_) => MaelezoBinafsiPage()));
-                          },
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (_) => MaelezoBinafsiPage()));
+                        },
+                        child: Container(
+                          padding:
+                              EdgeInsets.symmetric(vertical: 10, horizontal: 17),
+                          margin: EdgeInsets.only(bottom: 20),
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey, width: 1),
+                              borderRadius: BorderRadius.circular(10)),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
                                 'Maelezo Binafsi',
-                                style: TextStyle(
-                                    fontSize: 19,
-                                    color: Colors.grey),
+                                style:
+                                    TextStyle(fontSize: 19, color: Colors.grey),
                               ),
                               Icon(
                                 Icons.keyboard_arrow_right_rounded,
@@ -130,9 +130,8 @@ class _ProfilePageState extends State<ProfilePage> {
                           children: [
                             Text(
                               'Maelezo ya Akaunti',
-                              style: TextStyle(
-                                  fontSize: 19,
-                                  color: Colors.grey),
+                              style:
+                                  TextStyle(fontSize: 19, color: Colors.grey),
                             ),
                             Icon(
                               Icons.keyboard_arrow_right_rounded,
@@ -142,26 +141,25 @@ class _ProfilePageState extends State<ProfilePage> {
                           ],
                         ),
                       ),
-                      Container(
-                        padding:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 17),
-                        margin: EdgeInsets.only(bottom: 20),
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey, width: 1),
-                            borderRadius: BorderRadius.circular(10)),
-                        child: GestureDetector(
-                          onTap: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (_) => TaarifaFupiPage()));
-                          },
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (_) => TaarifaFupiPage()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.symmetric(
+                              vertical: 10, horizontal: 17),
+                          margin: EdgeInsets.only(bottom: 20),
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey, width: 1),
+                              borderRadius: BorderRadius.circular(10)),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
                                 'Taarifa Fupi',
-                                style: TextStyle(
-                                    fontSize: 19,
-                                    color: Colors.grey),
+                                style:
+                                    TextStyle(fontSize: 19, color: Colors.grey),
                               ),
                               Icon(
                                 Icons.keyboard_arrow_right_rounded,
@@ -182,27 +180,32 @@ class _ProfilePageState extends State<ProfilePage> {
                               fontSize: 17),
                         ),
                       ),
-                      Container(
-                        padding:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 17),
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey, width: 1),
-                            borderRadius: BorderRadius.circular(10)),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              'Taarifa ya Kielektroniki',
-                              style: TextStyle(
-                                  fontSize: 19,
-                                  color: Colors.grey),
-                            ),
-                            Icon(
-                              Icons.keyboard_arrow_right_rounded,
-                              color: Colors.grey,
-                              size: 35,
-                            )
-                          ],
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (_) => TaarifaZaKielektronikiPage()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.symmetric(
+                              vertical: 10, horizontal: 17),
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey, width: 1),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Taarifa ya Kielektroniki',
+                                style:
+                                    TextStyle(fontSize: 19, color: Colors.grey),
+                              ),
+                              Icon(
+                                Icons.keyboard_arrow_right_rounded,
+                                color: Colors.grey,
+                                size: 35,
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ],
