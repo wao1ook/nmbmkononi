@@ -21,7 +21,7 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: Color(0xff0058a8),
+        backgroundColor: Theme.of(context).primaryColor,
         title: Text(
           'My Profile',
           style: TextStyle(
@@ -37,12 +37,12 @@ class _ProfilePageState extends State<ProfilePage> {
         itemCount: 1,
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            color: Color(0xff0058a8),
+            color: Theme.of(context).primaryColor,
             child: Column(
               children: <Widget>[
                 Container(
                     height: 200,
-                    color: Color(0xff0058a8),
+                    color: Theme.of(context).primaryColor,
                     child: Expanded(
                       flex: 5,
                       child: Column(

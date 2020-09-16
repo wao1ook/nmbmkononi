@@ -32,7 +32,7 @@ class _TaarifaFupiPageState extends State<TaarifaFupiPage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: Color(0xff0058a8),
+        backgroundColor: Theme.of(context).primaryColor,
         title: Text(
           'Taarifa Fupi',
           style: TextStyle(

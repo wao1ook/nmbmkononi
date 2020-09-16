@@ -26,14 +26,13 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return new SplashScreen(
-      seconds: 5,
-      navigateAfterSeconds: new AfterSplash(),
+    return SplashScreen(
       image: new Image.asset('assets/images/mkononi logo.png'),
-      backgroundColor: Color(0xff0058a8),
-      styleTextUnderTheLoader: new TextStyle(),
-      photoSize: 100.0,
+      backgroundColor: Theme.of(context).primaryColor,
+      navigateAfterSeconds: new AfterSplash(),
       loaderColor: Colors.white38,
+      photoSize: 100.0,
+      seconds: 5,
     );
   }
 }
@@ -52,7 +51,7 @@ class _AfterSplashState extends State<AfterSplash> {
       backgroundColor: Color(0xfff1f1f1),
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: Color(0xff0058a8),
+        backgroundColor: Theme.of(context).primaryColor,
         title: Image(
           image: AssetImage(
             'assets/images/nmb_icon.png',
@@ -83,7 +82,7 @@ class _AfterSplashState extends State<AfterSplash> {
       drawer: Container(
         child: Drawer(
             child: Container(
-          color: Color(0xff0058a8),
+          color: Theme.of(context).primaryColor,
           child: new ListView(
             children: <Widget>[
               new DrawerHeader(
@@ -337,7 +336,7 @@ class _AfterSplashState extends State<AfterSplash> {
             FontAwesome.phone,
           color: Colors.white,
         ),
-        backgroundColor: Color(0xfffc8e4b),
+        backgroundColor: Theme.of(context).accentColor,
       ),
     );
   }

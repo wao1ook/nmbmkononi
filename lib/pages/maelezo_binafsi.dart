@@ -17,7 +17,7 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: Color(0xff0058a8),
+        backgroundColor: Theme.of(context).primaryColor,
         title: Text(
           'Maelezo Binafsi',
           style: TextStyle(
@@ -55,7 +55,7 @@ class _MaelezoBinafsiPageState extends State<MaelezoBinafsiPage> {
                 Container(
                     padding: EdgeInsets.only(bottom: 30),
                     width: double.infinity,
-                    color: Color(0xff0058a8),
+                    color: Theme.of(context).primaryColor,
                     child: Column(
                       children: [
                         Image(
