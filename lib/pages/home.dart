@@ -5,78 +5,94 @@ import 'package:flutter_icons/flutter_icons.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
       padding: EdgeInsets.symmetric(vertical: 25, horizontal: 25),
       child: Column(
         children: [
-          Container(
-            child: Container(
-              padding: EdgeInsets.symmetric(vertical: 30, horizontal: 25),
-              decoration: BoxDecoration(
-                color: Theme.of(context).primaryColor,
-                borderRadius: BorderRadius.circular(5),
+          Stack(
+            children: <Widget>[
+              Container(
+                height: 150,
+                width: double.infinity,
+                child: Stack(
+                  children: <Widget>[
+                    Center(
+                      child: new Image.asset(
+                        'assets/images/background.png',
+                        width: size.width,
+                        height: size.height,
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+
+                  ],
+                ),
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(bottom: 8),
-                        child: Text(
-                          'Salio Liliopo',
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 40, horizontal: 25),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(bottom: 8),
+                          child: Text(
+                            'Salio Liliopo',
+                            style: TextStyle(
+                              fontFamily: 'Myriad Pro',
+                              fontSize: 16,
+                              color: const Color(0xffffffff),
+                              letterSpacing: 0.0007874999791383743,
+                            ),
+                            textAlign: TextAlign.left,
+                          ),
+                        ),
+                        Text(
+                          'TZS 950,450',
+                          style: TextStyle(
+                            fontFamily: 'Myriad Pro',
+                            fontSize: 32,
+                            color: const Color(0xffffffff),
+                            letterSpacing: 0.0016031251698732376,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Text(
+                          'Salio Halisi',
                           style: TextStyle(
                             fontFamily: 'Myriad Pro',
                             fontSize: 16,
-                            color: const Color(0xffffffff),
-                            letterSpacing: 0.0007874999791383743,
+                            color: Colors.white54,
+                            letterSpacing: 0.0005062499865889549,
                           ),
                           textAlign: TextAlign.left,
                         ),
-                      ),
-                      Text(
-                        'TZS 950,450',
-                        style: TextStyle(
-                          fontFamily: 'Myriad Pro',
-                          fontSize: 32,
-                          color: const Color(0xffffffff),
-                          letterSpacing: 0.0016031251698732376,
-                          fontWeight: FontWeight.w700,
+                        Text(
+                          'TZS 940,450',
+                          style: TextStyle(
+                            fontFamily: 'Myriad Pro',
+                            fontSize: 20,
+                            color: Colors.white54,
+                            letterSpacing: 0.0006749999821186066,
+                          ),
+                          textAlign: TextAlign.left,
                         ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Text(
-                        'Salio Halisi',
-                        style: TextStyle(
-                          fontFamily: 'Myriad Pro',
-                          fontSize: 16,
-                          color: Colors.white54,
-                          letterSpacing: 0.0005062499865889549,
-                        ),
-                        textAlign: TextAlign.left,
-                      ),
-                      Text(
-                        'TZS 940,450',
-                        style: TextStyle(
-                          fontFamily: 'Myriad Pro',
-                          fontSize: 20,
-                          color: Colors.white54,
-                          letterSpacing: 0.0006749999821186066,
-                        ),
-                        textAlign: TextAlign.left,
-                      ),
-                    ],
-                  )
-                ],
-              ),
-            ),
+                      ],
+                    )
+                  ],
+                ),
+              )
+            ],
           ),
           SizedBox(
             height: 30,
