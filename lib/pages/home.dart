@@ -25,7 +25,6 @@ class Home extends StatelessWidget {
                         fit: BoxFit.fill,
                       ),
                     ),
-
                   ],
                 ),
               ),
@@ -134,10 +133,9 @@ class Home extends StatelessWidget {
                       borderRadius: BorderRadius.circular(50),
                       color: const Color(0xffe1e1e1),
                     ),
-                    child: Icon(
-                      FontAwesome.money,
-                      size: 32,
-                      color: Theme.of(context).primaryColor,
+                    child: Image.asset(
+                      'assets/images/Union 10.png',
+                      scale: 1.4,
                     ),
                   ),
                   Padding(
@@ -194,10 +192,9 @@ class Home extends StatelessWidget {
                       borderRadius: BorderRadius.circular(50),
                       color: const Color(0xffe1e1e1),
                     ),
-                    child: Icon(
-                      FontAwesome.fax,
-                      size: 28,
-                      color: Theme.of(context).primaryColor,
+                    child: Image.asset(
+                      'assets/images/Union 8.png',
+                      scale: 1.4,
                     ),
                   ),
                   Padding(
@@ -262,10 +259,9 @@ class Home extends StatelessWidget {
                       borderRadius: BorderRadius.circular(50),
                       color: const Color(0xffe1e1e1),
                     ),
-                    child: Icon(
-                      FontAwesome.mobile_phone,
-                      size: 38,
-                      color: Theme.of(context).primaryColor,
+                    child: Image.asset(
+                      'assets/images/Union 9.png',
+                      scale: 1.4,
                     ),
                   ),
                   Padding(
@@ -339,7 +335,7 @@ class Home extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 8.0),
                     child: Text(
-                      'Fedha za Kigeni',
+                      'Fedha za \n Kigeni',
                       style: TextStyle(
                         fontFamily: 'Myriad Pro',
                         fontSize: 15,
