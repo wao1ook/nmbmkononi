@@ -110,7 +110,8 @@ class _ProfilePageState extends State<ProfilePage> {
                                     TextStyle(fontSize: 17, color: Colors.grey),
                               ),
                               Icon(
-                                Icons.keyboard_arrow_right_rounded,
+                                // Icons.keyboard_arrow_right_rounded,
+                                Icons.keyboard_arrow_right,
                                 color: Colors.grey,
                                 size: 30,
                               )
@@ -134,7 +135,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                   TextStyle(fontSize: 17, color: Colors.grey),
                             ),
                             Icon(
-                              Icons.keyboard_arrow_right_rounded,
+                              Icons.keyboard_arrow_right,
                               color: Colors.grey,
                               size: 30,
                             )
@@ -162,7 +163,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                     TextStyle(fontSize: 17, color: Colors.grey),
                               ),
                               Icon(
-                                Icons.keyboard_arrow_right_rounded,
+                                Icons.keyboard_arrow_right,
                                 color: Colors.grey,
                                 size: 30,
                               )
@@ -200,7 +201,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                     TextStyle(fontSize: 17, color: Colors.grey),
                               ),
                               Icon(
-                                Icons.keyboard_arrow_right_rounded,
+                                Icons.keyboard_arrow_right,
                                 color: Colors.grey,
                                 size: 30,
                               )
